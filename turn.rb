@@ -1,10 +1,9 @@
 class Turn
-  puts '----- NEW TURN -----'
   attr_reader :question
-  attr_reader :current_player
+  attr_reader :player
 
   def initialize(current_player, question)
-    @current_player = current_player
+    @player = current_player
     @question = question
   end
 end
