@@ -1,4 +1,6 @@
 require './player'
+require './question'
+
 # class player
 #   - tracks and modifies lives
 
@@ -10,7 +12,5 @@ require './player'
 
 # main.rb will run the game using these classes
 
-playerOne = Player.new(3)
-puts playerOne.lives
-playerOne.lives = playerOne.lives - 1
-puts playerOne.lives
+newQ = Question.new("1 + 2?", 3)
+puts 'correct!' if newQ.correct_answer?(gets.chomp)
