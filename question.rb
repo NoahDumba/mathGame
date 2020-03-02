@@ -1,6 +1,6 @@
 class Question
-  attr_accessor :question
-  attr_accessor :answer
+  attr_reader :question
+  attr_reader :answer
 
   def initialize(q, a)
     @question = q
